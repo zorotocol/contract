@@ -36,6 +36,8 @@ contract Zorotocol {
         symbol = _symbol;
         totalSupply = 0;
         decimals = 0;
+        _paused = false;
+        _deadline = block.timestamp;
     }
 
     mapping(address => uint256) public balances;
